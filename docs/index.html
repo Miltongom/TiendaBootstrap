@@ -148,7 +148,7 @@
   fetch(categoriasUrl)
     .then(res => res.json())
     .then(categorias => {
-      // Contenedor visual (list-group de Bootstrap)
+    
       const lista = document.createElement("div");
       lista.className = "list-group shadow";
 
@@ -157,7 +157,6 @@
       titulo.textContent = "Categorías";
       lista.appendChild(titulo);
 
-      // Pintar cada categoría (sin modificar tu lógica de productos)
       categorias.forEach(cat => {
         const a = document.createElement("a");
         a.href = "#";
